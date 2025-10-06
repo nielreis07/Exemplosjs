@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card {
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        #pnlCatalogo {
+            padding: 20px;
+        }
+
+        h1 {
+            padding: 20px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body onload="preencheCatalogo()" class="bg-warning">
+    <div class="container-fluid">
+        <h1>Catálogo de Receitas</h1>
+        <div id="pnlCatalogo" class="d-flex flex-wrap"></div>
+    </div>
+
+    <script>
+        const receitas = [
+            {
+                titulo: "Arroz de Couve-Flor",
+                imagem: "https://sabores-new.s3.amazonaws.com/public/2024/11/arroz-de-couve-flor.jpg",
+                ingredientes: ["Arroz", "Couve-Flor", "Cebola Média", "Azeite"],
+                preparo: "Deixe a couve-flor picada. Adicione os ingredientes e refogue bem. Adicione sal, pimenta e cheiro-verde a gosto."
+            },
+            {
+                titulo: "Bolo de Café",
+                imagem: "https://anamariareceitas.com.br/wp-content/uploads/2022/11/Bolo-de-cafe-e-chocolate.jpg",
+                ingredientes: ["Farinha de Trigo", "Açúcar", "Café Coado", "Chocolate em Pó", "Ovos"],
+                preparo: "Bata o açúcar, as gemas e o café. Adicione farinha e chocolate. Bata as claras em neve e misture delicadamente."
+            },
+            {
+                titulo: "Coxinha de Brigadeiro",
+                imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtsOlrjrYCoL3zyho9__v1b7mHsrDGy1R1Q&s",
+                ingredientes: ["Leite Condensado", "Chocolate em Pó", "Manteiga", "Morango", "Chocolate Granulado"],
+                preparo: "Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo. Deixe esfriar, modele as coxinhas com morango dentro e passe no granulado."
+            },
+            {
+                titulo: "Café com Chocolate",
+                imagem: "https://uniquecafes.com.br/wp-content/uploads/2024/05/Chocolate-Quente-Especial-Sendo-Servido.webp",
+                ingredientes: ["Farinha de Trigo", "Açúcar", "Chocolate em Pó", "Ovos", "Manteiga", "Leite"],
+                preparo: "Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo. Deixe esfriar, modele as coxinhas com morango dentro e passe no granulado."
+            }
+        ];
+
+        function getListaIngredientes(receita) {
+            let lista = "<ul>";
+            lista += receita.ingredientes.map(i => "<li>" + i + "</li>").join("");
+            lista += "</ul>";
+            return lista;
+        }
+
+        function getCard(receita) {
+            return `
+                <div class="card" style="width: 250px;">
+                    <img src="${receita.imagem}" class="card-img-top" alt="${receita.titulo}">
+                    <div class="card-body">
+                        <h5 class="card-title">${receita.titulo}</h5>
+                        <div class="card-text">
+                            ${getListaIngredientes(receita)}
+                            <hr>
+                            ${receita.preparo}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function preencheCatalogo() {
+            const pnlCatalogo = document.getElementById("pnlCatalogo");
+            pnlCatalogo.innerHTML = receitas.map(getCard).join("");
+        }
+    </script>
+</body>
+
+</html>
