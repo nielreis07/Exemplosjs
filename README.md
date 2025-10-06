@@ -1,8 +1,8 @@
-**Exemplosjs**
+📂 **Exemplosjs**
 
 **Trabalho Prático da disciplina DGT2820 - Planejamento e Desenvolvimento de Aplicações Web Interativas**
 
-*Descrição:*
+📖 *Descrição:*
 
 *Este projeto consiste em uma aplicação web interativa desenvolvida para demonstrar o uso de algoritmos em JavaScript, manipulação do DOM, transmissão de dados em JSON
 e construção dinâmica de elementos com VUE JS.
@@ -10,7 +10,7 @@ O trabalho permite aos usuários visualizar e interagir com conteúdos dinâmico
 Foi desenvolvido pelo aluno Daniel Victor com o objetivo de aplicar os conhecimentos adquiridos na disciplina,
 demonstrando habilidades práticas em contextos reais de desenvolvimento web.*
 
-**Tecnologias Utilizadas**
+🛠 **Tecnologias Utilizadas**
 
 **-HTML5
 -CSS3
@@ -31,7 +31,7 @@ demonstrando habilidades práticas em contextos reais de desenvolvimento web.*
 3️⃣ Transmissão de Dados e VUE JS	Exibição de usuários	Mostra cards de usuários com foto, nome e email obtidos de uma API REST.
 	Atualização dinâmica	Utiliza VUE JS para renderização automática dos cards e atualização dos dados via Fetch ou AJAX.**
 
-**Estrutura do Projeto**
+📁 **Estrutura do Projeto**
 exemplosjs/
 ├─ ordenando.html      # Página de ordenação com DOM
 ├─ ordenando.js        # Funções de ordenação (swap, shuffle, bubble_sort, selection_sort, quick_sort)
@@ -41,7 +41,7 @@ exemplosjs/
 └─ README.md           # Documentação do projeto
 
 
-**Como Rodar o Projeto**
+🚀 **Como Rodar o Projeto**
 **Clone o repositório:**
 
 git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
@@ -51,7 +51,7 @@ Abra o diretório do projeto no Visual Studio Code ou outro editor de sua prefer
 
 Abra os arquivos HTML diretamente no navegador para testar as funcionalidades.
 
-**Observações**
+⚡**Observações**
 
 *Todos os exemplos utilizam boa prática de JavaScript e manipulação de DOM.
 O projeto explora conceitos de programação funcional, renderização dinâmica e integração com APIs externas.
