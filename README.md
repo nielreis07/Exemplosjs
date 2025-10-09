@@ -49,6 +49,15 @@ git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 
 Abra o diretório do projeto no Visual Studio Code ou outro editor de sua preferência.
 
+Abra os arquivos HTML diretamente no navegador para testar as funcionalidades.
+
+⚡**Observações**
+
+*Todos os exemplos utilizam boa prática de JavaScript e manipulação de DOM.
+O projeto explora conceitos de programação funcional, renderização dinâmica e integração com APIs externas.
+Pode servir como base para aprendizado de algoritmos, JSON e VUE JS em aplicações web interativas.*
+
+
 
 👤 Desenvolvido por
 
@@ -59,11 +68,3 @@ Disciplina: DGT2809 – Aprofundamento em Desenvolvimento Front-End
 Instituição: Estácio
 
 Ano: 2025
-
-Abra os arquivos HTML diretamente no navegador para testar as funcionalidades.
-
-⚡**Observações**
-
-*Todos os exemplos utilizam boa prática de JavaScript e manipulação de DOM.
-O projeto explora conceitos de programação funcional, renderização dinâmica e integração com APIs externas.
-Pode servir como base para aprendizado de algoritmos, JSON e VUE JS em aplicações web interativas.*
