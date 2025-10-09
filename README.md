@@ -49,6 +49,17 @@ git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 
 Abra o diretório do projeto no Visual Studio Code ou outro editor de sua preferência.
 
+
+👤 Desenvolvido por
+
+Aluno: Daniel Reis
+
+Disciplina: DGT2809 – Aprofundamento em Desenvolvimento Front-End
+
+Instituição: Estácio
+
+Ano: 2025
+
 Abra os arquivos HTML diretamente no navegador para testar as funcionalidades.
 
 ⚡**Observações**
