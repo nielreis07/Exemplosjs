@@ -63,7 +63,7 @@ Pode servir como base para aprendizado de algoritmos, JSON e VUE JS em aplicaç�
 
 Aluno: Daniel Reis
 
-Disciplina: DGT2809 – Aprofundamento em Desenvolvimento Front-End
+Disciplina: Planejamento e Desenv. de Aplicacoes Web Interativas
 
 Instituição: Estácio
 
